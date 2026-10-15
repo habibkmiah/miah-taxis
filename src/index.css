@@ -1,0 +1,44 @@
+body {
+  /* background-color: #0D1321; */
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient( #748CAB,#0D1321); */
+  background-color: #3e5c76;
+  background-image: linear-gradient(120deg, #3e5c76 0%, #0d1321 100%);
+}
+p, ol, ul, label, a {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F0EBD8;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F0EBD8;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.slabo-27px-regular {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navBtn {
+  background-color: #33333300;
+  color: #F0EBD8;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.navBtn:hover {
+  border: 1px solid #f0ebd86e;
+}

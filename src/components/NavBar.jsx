@@ -1,19 +1,33 @@
 function NavBar({ page, setPage }) {
     return (
-        <nav className="navbar">
+        <nav className="navbar"
+            style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '10px',
+                //padding: '10px',
+                //backgroundColor: '#0d1321',
+            }}
+        >
             <div className="navbar-logo">
                 <h1>Miah Taxis</h1>
             </div>
-            <div>Serving the Southend area</div>
-            <div className="navbar-links">
-                <button onClick={() => setPage('Home')} style={{ backgroundColor: page === 'Home' ? '#007bff' : '#f8f9fa', color: page === 'Home' ? '#fff' : '#333' }}>
+            <p>Serving the Southend area</p>
+            <div className="navbar-links"
+            style={{marginLeft: 'auto', display: 'flex', gap: '10px'}}
+            >
+                <button onClick={() => setPage('Home')} className="navBtn" style={{ backgroundColor: page === 'Home' ? '#1D2D44' : '#1d2d4400'}}>
                     Home
                 </button>
-                <button onClick={() => setPage('About')} style={{ backgroundColor: page === 'About' ? '#007bff' : '#f8f9fa', color: page === 'About' ? '#fff' : '#333' }}>
-                    About
+                <button onClick={() => setPage('About')} className="navBtn" style={{ backgroundColor: page === 'About' ? '#1D2D44' : '#1d2d4400'}}>
+                    About Us
                 </button>
-                <button onClick={() => setPage('Contact')} style={{ backgroundColor: page === 'Contact' ? '#007bff' : '#f8f9fa', color: page === 'Contact' ? '#fff' : '#333' }}>
-                    Contact
+                <button onClick={() => setPage('Contact')} className="navBtn" style={{ backgroundColor: page === 'Contact' ? '#1D2D44' : '#1d2d4400'}}>
+                    Contact Us
+                </button>
+                <button onClick={() => setPage('Quote')} className="navBtn" style={{ backgroundColor: page === 'Quote' ? '#1D2D44' : '#1d2d4400'}}>
+                    Get a Quote
                 </button>
             </div>
         </nav>        
