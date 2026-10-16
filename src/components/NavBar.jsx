@@ -1,4 +1,10 @@
-function NavBar({ page, setPage }) {
+import { NavLink } from 'react-router-dom';
+
+const navLinkStyles = ({ isActive }) => ({
+  backgroundColor: isActive ? '#1d2d4485' : '#1d2d4400',
+});
+
+function NavBar() {
     return (
         <nav className="navbar"
             style={{
@@ -6,29 +12,30 @@ function NavBar({ page, setPage }) {
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 gap: '10px',
-                //padding: '10px',
-                //backgroundColor: '#0d1321',
+                padding: '0 20px 0 20px',
+                background: 'linear-gradient(to bottom, #0d1321af, #5a89b900)',
             }}
         >
             <div className="navbar-logo">
-                <h1>Miah Taxis</h1>
+                <h3>Miah Taxis</h3>
             </div>
             <p>Serving the Southend area</p>
             <div className="navbar-links"
-            style={{marginLeft: 'auto', display: 'flex', gap: '10px'}}
+                style={{marginLeft: 'auto', display: 'flex', gap: '10px'}}
             >
-                <button onClick={() => setPage('Home')} className="navBtn" style={{ backgroundColor: page === 'Home' ? '#1D2D44' : '#1d2d4400'}}>
+                <NavLink to="/" className="navBtn" style={navLinkStyles}>
                     Home
-                </button>
-                <button onClick={() => setPage('About')} className="navBtn" style={{ backgroundColor: page === 'About' ? '#1D2D44' : '#1d2d4400'}}>
+                </NavLink>
+                <NavLink to="/about" className="navBtn" style={navLinkStyles}>
                     About Us
-                </button>
-                <button onClick={() => setPage('Contact')} className="navBtn" style={{ backgroundColor: page === 'Contact' ? '#1D2D44' : '#1d2d4400'}}>
+                </NavLink>
+                <NavLink to="/contact" className="navBtn" style={navLinkStyles}>
                     Contact Us
-                </button>
-                <button onClick={() => setPage('Quote')} className="navBtn" style={{ backgroundColor: page === 'Quote' ? '#1D2D44' : '#1d2d4400'}}>
+                </NavLink>
+                <NavLink to="/quote" className="navBtn" id="quote-btn" style={navLinkStyles}>
                     Get a Quote
-                </button>
+                </NavLink>
+
             </div>
         </nav>        
     )}

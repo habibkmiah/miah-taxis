@@ -1,6 +1,6 @@
 function Quote() {
     return (
-        <div className="quote-page">
+        <div className="standardTextBox">
             <h1>Get a Quote</h1>
             <p>To get a quote for our taxi services, please fill out the form below:</p>
             <form className="quote-form">

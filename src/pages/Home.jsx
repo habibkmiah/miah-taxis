@@ -4,12 +4,14 @@ function Home() {
       <div
       style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 2fr))',
         gap: '20px',
-        padding: '20px',
+        padding: '2.5% 10% 2.5% 10%',
       }}
       >
-        <div>
+        <div
+          className="standardTextBox"
+        >
           <h1>Welcome to Miah Taxis</h1>
           <p>Your reliable taxi service in the Southend area.</p>
           <p>We offer a range of services to meet your transportation needs, including:</p>
@@ -20,7 +22,7 @@ function Home() {
           </ul>
         </div>
         <img src="/public/images/journey.svg" alt="Miah Taxis" 
-          style={{ width: '100%', height: 'auto', borderRadius: '10px', opacity: '0.5'}}
+          style={{ width: '80%', height: 'auto', borderRadius: '10px', opacity: '0.5'}}
         />
       </div>
     </>
