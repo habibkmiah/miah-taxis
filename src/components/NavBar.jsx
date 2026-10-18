@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import NavContactCarousel from './NavContactCarousel.jsx';
 
 const navLinkStyles = ({ isActive }) => ({
   backgroundColor: isActive ? '#1d2d4485' : '#1d2d4400',
@@ -14,12 +15,16 @@ function NavBar() {
                 gap: '10px',
                 padding: '0 20px 0 20px',
                 background: 'linear-gradient(to bottom, #0d1321af, #5a89b900)',
+                position: 'sticky',
+                top: 0,
+                zIndex: 1000,
             }}
         >
             <div className="navbar-logo">
                 <h3>Miah Taxis</h3>
             </div>
             <p>Serving the Southend area</p>
+            <NavContactCarousel />
             <div className="navbar-links"
                 style={{marginLeft: 'auto', display: 'flex', gap: '10px'}}
             >

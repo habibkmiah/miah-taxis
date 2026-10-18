@@ -9,13 +9,15 @@ import Quote from './pages/Quote.jsx'
 function App() {
   return (
     <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/quote" element={<Quote />} />
-      </Routes>
+      <div className="appContainer">
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/quote" element={<Quote />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   )
 }

@@ -1,18 +1,19 @@
 body {
-  /* background-color: #0D1321; */
-  height: 100vh;
   margin: 0;
-  /* padding: 10px; */
-  align-items: center;
-  justify-content: center;
-  /* background: linear-gradient( #748CAB,#0D1321); */
   background-color: #3e5c76;
-  /*background-image: linear-gradient(120deg, #3e5c76 0%, #0d1321 100%);*/
   background:
   url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%221.50%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%20opacity%3D%220.17%22%2F%3E%3C%2Fsvg%3E"),
   linear-gradient(85deg, #182836, #5a8ab9);
 }
-.poem{
+html{
+  /*
   overflow: scroll;
   scrollbar-width: thin;
+  scrollbar-color: #5a8ab9 #182836;
+  */
+  scroll-behavior: smooth;
+  margin: 0;
+  min-height: 100dvh;
+  scrollbar-width: thin;
+  scrollbar-color: #3E5C76 #5a8ab9;
 }

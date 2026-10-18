@@ -1,0 +1,28 @@
+@keyframes pushUp {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(0); }
+    50%  { transform: translateY(-41px); }
+    80% { transform: translateY(-41px); }
+    100% { transform: translateY(0); }
+}
+
+.navContactCarousel{
+    transition: all ease-in 0.5s;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 0px;
+    height: 31px;
+    overflow: hidden;
+}
+.navContactCarousel:Hover{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.navContactItems{
+    animation: 10s ease-in-out infinite pushUp;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px;
+    gap: 21px;
+}
