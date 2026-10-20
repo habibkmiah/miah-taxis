@@ -25,7 +25,7 @@ function AccordionItem({ question, answer, final }) {
 
 function FAQ() {
     return(
-        <>
+        <div className="standardPage">
             <h2>Frequently Asked Questions</h2>
             <div className="accordion">
                 <AccordionItem question="Question" answer="Answer" final={false} />
@@ -35,7 +35,7 @@ function FAQ() {
                 <AccordionItem question="Question" answer="Answer" final={false} />
                 <AccordionItem question="Question" answer="Answer" final={true} />
             </div>
-        </>
+        </div>
     )
 }
 

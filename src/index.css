@@ -6,11 +6,6 @@ body {
   linear-gradient(85deg, #182836, #5a8ab9);
 }
 html{
-  /*
-  overflow: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: #5a8ab9 #182836;
-  */
   scroll-behavior: smooth;
   margin: 0;
   min-height: 100dvh;

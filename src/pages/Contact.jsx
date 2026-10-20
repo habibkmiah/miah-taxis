@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <div className="standardTextBox">
+        <div className="standardPage">
             <p>Contact us at info@miahtaxis.com or call us at 01708 123456.</p>
             <nav>
                 <ul>

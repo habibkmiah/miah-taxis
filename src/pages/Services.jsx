@@ -1,7 +1,7 @@
 function Services() {
     return(
         <div>
-            <div className="standardTextBox">
+            <div className="standardPage">
                 <h2>Airport Services</h2>
                 <p>We offer airport transfers to and from: </p>
                 <ul>

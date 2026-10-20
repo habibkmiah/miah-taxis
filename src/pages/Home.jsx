@@ -11,7 +11,7 @@ function Home() {
       }}
       >
         <div
-          className="standardTextBox"
+          className="standardPage"
         >
           <h1>Welcome to Miah Taxis</h1>
           <p>Your reliable taxi service in the Southend and Rayleigh area.</p>
