@@ -4,7 +4,7 @@ function NavContactCarousel() {
      return (
          <div className="navContactCarousel">
             <div className="navContactItems">
-                <a href="tel:+441234567890" className="navContactNumber">+44 1234 567890</a>
+                <a href="tel:+44 7828 835508" className="navContactNumber">07828 835508</a>
                 {/*<a href="mailto:info@miahtaxis.com" className="navContactEmail">info@miahtaxis.com</a>*/}
             </div>
         </div>

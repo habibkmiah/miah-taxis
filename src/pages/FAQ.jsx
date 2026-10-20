@@ -13,7 +13,7 @@ function AccordionItem({ question, answer, final }) {
                 
             >
                 <p>{question}</p>
-                <img className={`dropDownArrow${open ? "Open" : ""}`} src="/images/down-arrow.svg" alt="▼" aria-hidden="true"/>
+                <img className={`dropDownArrow${open ? "Open" : ""}`} src="/images/icons/down-arrow.svg" alt="▼" aria-hidden="true"/>
             </button>
             <div className={`answer${open ? "Open" : ""}`}>
                 <hr style={{ border: "1px solid #f0ebd850" }} />
@@ -27,7 +27,7 @@ function FAQ() {
     return(
         <div className="standardPage">
             <h2>Frequently Asked Questions</h2>
-            <div className="accordion">
+            <div className=" glassCard">
                 <AccordionItem question="Question" answer="Answer" final={false} />
                 <AccordionItem question="Question" answer="Answer" final={false} />
                 <AccordionItem question="Question" answer="Answer" final={false} />

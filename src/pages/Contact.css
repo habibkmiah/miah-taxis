@@ -1,0 +1,30 @@
+.contactContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10%;
+    align-items: center;
+    justify-items: stretch;
+    padding: 0 20%
+}
+.contactItem{
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.contactItem:hover{
+    background: #ffffff21;
+}
+.contactIcon{
+    border-radius: 20px;
+    background-color: #ffffff21;
+    max-height: 40px;
+    padding: 10px;
+}
+.contactSubtitle {
+    margin: 0%;
+}

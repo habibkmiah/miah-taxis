@@ -21,7 +21,7 @@ function NavBar() {
             }}
         >
             <div className="navbar-logo">
-                <h3>Miah Taxis</h3>
+                <h3>Kayum's Taxis</h3>
             </div>
             <NavContactCarousel />
             <div className="navbar-links"

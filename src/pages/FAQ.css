@@ -7,10 +7,8 @@
 }
 .accordionItem{
     flex-direction: column;
-    border-bottom: 1px solid #F0EBD8;
-}
-.accordionItem{
-    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 1em;
 }
 .dropDownButton{
     width: 100%;
@@ -21,6 +19,7 @@
     background: none;
     border: none;
     align-items: center;
+    font: inherit;
 }
 .dropDownArrow{
     background: none;

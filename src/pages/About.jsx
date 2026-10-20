@@ -43,7 +43,7 @@ function About() {
                     <span className="breadcrumb" id="b3"></span>
                 </div>
             */}
-            <img className = "down-arrow" src="/images/down-arrow.svg" alt="▼" aria-hidden="true"/>
+            <img className = "down-arrow" src="/images/icon/down-arrow.svg" alt="▼" aria-hidden="true"/>
         </div>
     );
 }
