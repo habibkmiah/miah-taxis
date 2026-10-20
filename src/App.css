@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     height: 100dvh;
 }
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
 .navBtn {
     background-color: #33333300;
     color: #F0EBD8;

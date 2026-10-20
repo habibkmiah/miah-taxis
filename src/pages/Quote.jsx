@@ -6,6 +6,15 @@ function Quote() {
             <form className="quote-form">
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" required />
+                <label htmlFor="name">Trip Type:</label>
+                <input type="text" id="type" name="type" required />
+                <label htmlFor="name">Pickup Location:</label>
+                <input type="text" id="pickup" name="pickup" required />
+                <label htmlFor="name">Destination:</label>
+                <input type="text" id="destination" name="destination" required />
+                <label htmlFor="name">Return Trip Required?</label>
+                <input type="text" id="return" name="return" required />
+                <input type="button" ></input>
             </form>
         </div>
     );

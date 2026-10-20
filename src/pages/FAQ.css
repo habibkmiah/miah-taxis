@@ -1,0 +1,49 @@
+.accordion{
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #F0EBD8;
+    background: #3e5c767e;
+    margin: 0px;
+}
+.accordionItem{
+    flex-direction: column;
+    border-bottom: 1px solid #F0EBD8;
+}
+.accordionItem{
+    flex-direction: column;
+}
+.dropDownButton{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    background: none;
+    border: none;
+    align-items: center;
+}
+.dropDownArrow{
+    background: none;
+    border: none;
+    height: 24px;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+.dropDownArrowOpen{
+    background: none;
+    border: none;
+    height: 24px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+.answer{
+    overflow: hidden;
+    padding: 0 10px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+.answerOpen{
+    padding: 0 10px;
+    max-height: 40px;
+    transition: max-height 0.3s ease;
+}
