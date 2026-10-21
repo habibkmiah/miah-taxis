@@ -1,0 +1,49 @@
+.quoteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    align-self: center;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+.inputField {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inputField label {
+    color: #3E5C76;
+    position: absolute;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    top: 12px;
+    left: 12px;
+}
+.inputField input:focus + label,
+.inputField:focus-within label,
+.inputField:has(input:valid) label{
+    top: 4px;
+    left:12px;
+}
+.inputField input:focus,
+.inputField:focus-within input,
+.inputField:has(input:valid) input {
+    height: 38px;
+    padding-bottom: 0px;
+    padding-top: 12px;
+}
+.inputField input {
+    font-size: large;
+    color: #f0ebd8;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff50;
+    border: 1px solid #f0ebd8;
+    padding: 10px;
+    height: 22px;
+    transition: height 0.2s ease, padding 0.2s ease;
+}
