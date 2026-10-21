@@ -3,12 +3,14 @@
     100% { opacity: 0; transform: translateY(-41);}
 }
 .navContactCarousel{
-    transition: all ease-in 0.5s;
+    transition: all ease 0.3s;
     border-radius: 20px;
     padding: 10px 20px;
     margin-right: 0px;
-    height: 21px;
     overflow: hidden;
+    background: #ffffff00;
+    border: none;
+    cursor: pointer;
 }
 .navContactCarousel:Hover{
     background: rgba(255, 255, 255, 0.1);

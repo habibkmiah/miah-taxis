@@ -36,9 +36,11 @@ function NavBar() {
                 <NavLink to="/Services" className="navBtn" style={navLinkStyles}>
                     Services
                 </NavLink>
-                <NavLink to="/FAQ" className="navBtn" style={navLinkStyles}>
-                    FAQ
-                </NavLink>
+                {/*
+                    <NavLink to="/FAQ" className="navBtn" style={navLinkStyles}>
+                        FAQ
+                    </NavLink>
+                */}
                 <NavLink to="/ContactUs" className="navBtn" style={navLinkStyles}>
                     Contact Us
                 </NavLink>

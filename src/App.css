@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     border-radius: 20px;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 .navBtn:hover {
     border: 1px solid #f0ebd86e;
@@ -118,4 +119,5 @@ h1, h2, h3, h4, h5, h6 {
     flex: 0 0 100%;
     box-sizing: border-box;
     padding: 5% 10%;
+    width: 100%;
 }

@@ -1,6 +1,12 @@
+import { ViewTransition } from 'react';
+
 function Home() {
   return (
-    <>
+    <ViewTransition
+      default="none"
+      enter="slide-up"
+      exit="slide-down"
+    >
       <div
       style={{
         display: 'grid',
@@ -13,8 +19,8 @@ function Home() {
         <div
           className="standardPage"
         >
-          <h1>Welcome to Miah Taxis</h1>
-          <p>Your reliable taxi service in the Southend and Rayleigh area.</p>
+          <h1>Welcome to Kayum's Taxis</h1>
+          <p>Your reliable taxi service in the Rayleigh area.</p>
           <p>We offer:</p>
           <ul>
             <li>Competitive Pricing</li>
@@ -26,7 +32,7 @@ function Home() {
           style={{ width: '80%', height: 'auto', borderRadius: '10px', opacity: '0.5'}}
         />
       </div>
-    </>
+    </ViewTransition>
   )
 }
 
