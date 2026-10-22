@@ -12,6 +12,25 @@
     from { transform: translateY(-10px); }
     to { transform: translateY(0); }
 }
+@media (max-width: 768px) {
+    .navbarDesktop{
+        display: none;
+    }
+    .navbarMobile{
+        display: flex;
+    }
+    p, ol, ul, label, a, button {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .navbarDesktop{
+        display: flex;
+    }
+    .navbarMobile{
+        display: none;
+    }
+} 
 p, ol, ul, label, a, button {
     font-family: "Founders Grotesk", sans-serif;
     font-weight: 400;
@@ -46,6 +65,67 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     padding: 10%;
 }
+.navbarDesktop{
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px 0 20px;
+    background: linear-gradient(to bottom, #0d1321af, #ffffff00);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbarLinksDesktop{
+    margin-left: auto;
+    gap: 10px;
+}
+.navbarMobile{
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px 0 20px;
+    background: linear-gradient(to bottom, #0d1321af, #ffffff00);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbarLinksMobile{
+    display: flex;
+    z-index: 1000;
+    gap: 0px;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    background: #0D1321;
+    background: linear-gradient(0deg, rgba(13, 19, 33, 0.46) 0%, rgba(13, 19, 33, 1) 83%);
+}
+.navBtnMob {
+    background-color: #33333300;
+    color: #F0EBD8;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: #F0EBD8;
+    font-size: 40px;
+}
+#quoteBtnMob {
+    background: rgba(255, 255, 255, 0.582); 
+}
+.menuBtn {
+    background-color: #33333300;
+    border: 1px solid #f0ebd800;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
 .navBtn {
     background-color: #33333300;
     color: #F0EBD8;
@@ -59,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 .navBtn:hover {
     border: 1px solid #f0ebd86e;
 }
-#quote-btn {
+#quoteBtn {
     background-color: rgba(255, 255, 255, 0.301); 
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -120,4 +200,11 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     padding: 5% 10%;
     width: 100%;
+}
+.ital {
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+.ital:hover {
+    transform: skew(-10deg);
 }

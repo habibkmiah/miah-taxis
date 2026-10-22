@@ -20,7 +20,7 @@ function Home() {
           className="standardPage"
         >
           <h1>Welcome to Kayum's Taxis</h1>
-          <p>Your reliable taxi service in the Rayleigh area.</p>
+          <h2>Honest, timely and reliable taxi service in the <span className="ital">Rayleigh</span> area.</h2>
           <p>We offer:</p>
           <ul>
             <li>Competitive Pricing</li>

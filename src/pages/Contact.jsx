@@ -6,7 +6,7 @@ function ContactItem({ iconSrc, iconAlt, sub, contactLink, contactLinkText }) {
         <a className="contactItem" href={ contactLink } name={`${ iconAlt } Link`}>
             <img className="glassCard contactIcon" src={ iconSrc } alt={ iconAlt }></img>
             <p className="contactSubtitle">{ sub }</p>
-            <p className="contactLink">{ contactLinkText }</p>
+            <p className="contact">{ contactLinkText }</p>
         </a>
     )
 }
