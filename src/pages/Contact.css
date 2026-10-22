@@ -1,10 +1,21 @@
+@media (max-width: 768px) {
+    .contactContainer{
+        grid-template-columns: auto;
+        padding: 0%;
+        gap: 5%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .contactContainer{
+        grid-template-columns: auto auto;
+        padding: 0 20%;
+        gap: 10%;
+    }
+} 
 .contactContainer{
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 10%;
     align-items: center;
     justify-items: stretch;
-    padding: 0 20%
 }
 .contactItem{
     transition: all 0.5s ease;

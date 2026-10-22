@@ -22,6 +22,9 @@
     p, ol, ul, label, a, button {
         font-size: 16px;
     }
+    .standardPage {
+        padding: 5% 5%;
+    }
 }
 @media only screen and (min-width: 769px) {
     .navbarDesktop{
@@ -29,6 +32,9 @@
     }
     .navbarMobile{
         display: none;
+    }
+    .standardPage {
+        padding: 5% 10%;
     }
 } 
 p, ol, ul, label, a, button {
@@ -60,10 +66,12 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     height: 100dvh;
 }
-.contentContainerDIS{
+.standardPage {
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    gap: 10px;
+    justify-content: center;
+    padding: 5% 10%;
 }
 .navbarDesktop{
     align-items: center;
@@ -76,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 .navbarLinksDesktop{
+    display: flex;
     margin-left: auto;
     gap: 10px;
 }
@@ -151,13 +160,6 @@ h1, h2, h3, h4, h5, h6 {
     url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%221.50%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url(%23n)%22%20opacity%3D%220.17%22%2F%3E%3C%2Fsvg%3E");
     backdrop-filter: blur(5px);    
     border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.standardPage {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    padding: 5% 10%;
 }
 .breadcrumb_aboutUs {
     position: fixed;
