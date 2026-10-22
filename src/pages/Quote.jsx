@@ -32,8 +32,8 @@ function Quote() {
                         <label htmlFor="return">Return Trip Required?</label>
                         <input type="text" id="return" name="return" required />
                     </div>
-                    <div className="inputField">
-                        <input type="button" ></input>
+                    <div className="submitContainer">
+                        <input className ="submit" type="submit" value="Submit" />
                     </div>
                 </form>
             </div>

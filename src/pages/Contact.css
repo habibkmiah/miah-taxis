@@ -1,21 +1,30 @@
 @media (max-width: 768px) {
     .contactContainer{
-        grid-template-columns: auto;
-        padding: 0%;
+        grid-template-columns: auto auto;
+        padding: 0 5%;
         gap: 5%;
+        justify-items: stretch;
     }
 }
 @media only screen and (min-width: 769px) {
     .contactContainer{
         grid-template-columns: auto auto;
         padding: 0 20%;
+        justify-items: stretch;
         gap: 10%;
     }
 } 
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 .contactContainer{
     display: grid;
     align-items: center;
-    justify-items: stretch;
 }
 .contactItem{
     transition: all 0.5s ease;
@@ -26,6 +35,7 @@
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+    overflow: hidden;
 }
 .contactItem:hover{
     background: #ffffff21;
